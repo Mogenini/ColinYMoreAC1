@@ -52,12 +52,36 @@ def Drawcircle(start, end):
 
 def rectangle(start, end):
     """Draw rectangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+
+    for count in range(2):
+        forward(end.y - start.y)
+        right(90)
+        forward(end.x - start.x)
+        right(90)
+
+    end_fill()
 
 
 def triangle(start, end):
     """Draw triangle from start to end."""
-    pass  # TODO
+    up()
+    goto(start.x, start.y)
+    down()
+    begin_fill()
+    length = end.x - start.x
+
+    forward(length)
+    right(80)
+    forward(length)
+    right(20)
+    
+
+    end_fill()
+
 
 
 def tap(x, y):
