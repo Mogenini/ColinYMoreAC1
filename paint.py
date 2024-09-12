@@ -35,7 +35,7 @@ def square(start, end):
 
     end_fill()
 
-
+#Se agregaron los movimientos necesarios para realizar un circulo
 def Drawcircle(start, end):
     """Draw circle from start to end."""
     up()
@@ -49,7 +49,7 @@ def Drawcircle(start, end):
     end_fill()
     pass  # TODO
 
-
+#Se agregaron los movimientos necesarios para hacer un rectangulo
 def rectangle(start, end):
     """Draw rectangle from start to end."""
     up()
@@ -65,7 +65,7 @@ def rectangle(start, end):
 
     end_fill()
 
-
+#Se agregaron los movimientos necesarios para hacer un triangulo
 def triangle(start, end):
     """Draw triangle from start to end."""
     up()
@@ -107,6 +107,7 @@ setup(420, 420, 370, 0)
 onscreenclick(tap)
 listen()
 onkey(undo, 'u')
+#Se agregaron un color mas para el color naranja
 onkey(lambda: color('Orange'),'O')
 onkey(lambda: color('black'), 'K')
 onkey(lambda: color('white'), 'W')
